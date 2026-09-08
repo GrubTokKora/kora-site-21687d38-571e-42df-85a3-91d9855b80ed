@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Photo Gallery — Newport Sailing School and Tours</title>
+<meta content="Browse photos of sailing on Newport Harbor and Narragansett Bay with Newport Sailing School and Tours. See the boats, the crew and the scenery." name="description"/>
+
+<link href="assets/styles.css" rel="stylesheet"/>
+<meta content="website" property="og:type"/>
+<meta content="Photo Gallery — Newport Sailing School and Tours" property="og:title"/>
+<meta content="Browse photos of sailing on Newport Harbor and Narragansett Bay with Newport Sailing School and Tours. See the boats, the crew and the scenery." property="og:description"/>
+<meta content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_gr31jv.jpg" property="og:image"/>
+
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Photo Gallery — Newport Sailing School and Tours" name="twitter:title"/>
+<meta content="Browse photos of sailing on Newport Harbor and Narragansett Bay with Newport Sailing School and Tours. See the boats, the crew and the scenery." name="twitter:description"/>
+<meta content="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_gr31jv.jpg" name="twitter:image"/>
+<script>
+    window.KORA_SITE_CONFIG = {
+      apiBaseUrl: "https://kora-agent.grubtok.com",
+      businessId: "21687d38-571e-42df-85a3-91d9855b80ed",
+      recaptchaSiteKey: "6LcsdJYsAAAAAAur-h7cYlZuGJTmijNHmOi5kFH7"
+    };
+    window.KORA_CONFIG = Object.assign(window.KORA_CONFIG || {}, window.KORA_SITE_CONFIG);
+  </script>
+<style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary: #1b3a5b;
+      --secondary: #efe9e6;
+      --accent: #aa2b2b;
+      --white: #ffffff;
+      --font-display: 'Rozha One', serif;
+      --font-body: 'Inter', sans-serif;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 1.125rem;
+      line-height: 1.75;
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+
+    /* ── HEADER ── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 72px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      transition: box-shadow 0.2s ease;
+    }
+    .site-header.scrolled {
+      box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+    }
+    .header-logo img {
+      height: 44px;
+      display: block;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .header-nav a {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #efe9e6;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding-bottom: 2px;
+    }
+    .header-nav a.active {
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+    .header-book-btn {
+      background: var(--accent);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border-radius: 4px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #efe9e6;
+    }
+    .nav-drawer {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--primary);
+      z-index: 200;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .nav-drawer.open {
+      display: flex;
+    }
+    .nav-drawer a {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: #efe9e6;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .nav-drawer a.active {
+      text-decoration: underline;
+      text-decoration-color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+    .nav-drawer .drawer-book-btn {
+      background: var(--accent);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.6rem 1.4rem;
+      border-radius: 4px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    .drawer-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.5rem;
+      background: none;
+      border: none;
+      color: #efe9e6;
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+
+    /* ── GALLERY PAGE ── */
+    .gallery-page-hero {
+      background: var(--primary);
+      padding: 4rem 2rem 3.5rem;
+      text-align: center;
+    }
+    .gallery-page-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(239,233,230,0.7);
+      margin-bottom: 0.75rem;
+    }
+    .gallery-page-h1 {
+      font-family: var(--font-display);
+      font-size: 3.5rem;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .gallery-page-intro {
+      font-family: var(--font-body);
+      font-size: 1.125rem;
+      color: rgba(239,233,230,0.9);
+      max-width: 44rem;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    /* ── FILMSTRIP (homepage spec, expanded) ── */
+    .gallery-filmstrip-section {
+      background: var(--white);
+      padding: 3rem 0;
+    }
+    .gallery-filmstrip-heading {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--primary);
+      text-align: center;
+      padding: 0 2rem;
+      margin-bottom: 1.75rem;
+    }
+    .gallery-filmstrip {
+      display: flex;
+      gap: 0.75rem;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
+      scrollbar-color: var(--primary) transparent;
+      padding-bottom: 0.5rem;
+    }
+    .gallery-filmstrip::-webkit-scrollbar {
+      height: 4px;
+    }
+    .gallery-filmstrip::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .gallery-filmstrip::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      border-radius: 2px;
+    }
+    .gallery-filmstrip img {
+      height: 320px;
+      width: auto;
+      min-width: 480px;
+      object-fit: cover;
+      flex-shrink: 0;
+      display: block;
+    }
+
+    /* ── FULL GRID ── */
+    .gallery-grid-section {
+      background: var(--secondary);
+      padding: 4rem 2rem;
+    }
+    .gallery-grid-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .gallery-grid-heading {
+      font-family: var(--font-display);
+      font-size: 2.25rem;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    .gallery-grid-subhead {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--primary);
+      text-align: center;
+      max-width: 36rem;
+      margin: 0 auto 2.5rem;
+      line-height: 1.75;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery-grid-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+    }
+    .gallery-grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.35s ease;
+    }
+    .gallery-grid-item:hover img {
+      transform: scale(1.04);
+    }
+    .gallery-grid-item:focus-within img {
+      transform: scale(1.04);
+    }
+
+    /* ── LIGHTBOX ── */
+    .lightbox-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(27,58,91,0.93);
+      z-index: 300;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .lightbox-overlay.open {
+      display: flex;
+    }
+    .lightbox-inner {
+      position: relative;
+      max-width: 90vw;
+      max-height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox-inner img {
+      max-width: 90vw;
+      max-height: 85vh;
+      object-fit: contain;
+      display: block;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 2rem;
+      cursor: pointer;
+      line-height: 1;
+      font-family: var(--font-body);
+    }
+    .lightbox-prev,
+    .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(27,58,91,0.7);
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      line-height: 1;
+      border-radius: 2px;
+      transition: background 0.2s ease;
+    }
+    .lightbox-prev:hover,
+    .lightbox-next:hover {
+      background: var(--accent);
+    }
+    .lightbox-prev {
+      left: -3.5rem;
+    }
+    .lightbox-next {
+      right: -3.5rem;
+    }
+
+    /* ── CLOSING CTA BAND ── */
+    .gallery-cta-band {
+      background: var(--primary);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .gallery-cta-rule {
+      width: 40px;
+      height: 3px;
+      background: var(--accent);
+      margin: 0 auto 2rem;
+    }
+    .gallery-cta-heading {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+      max-width: 36rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .gallery-cta-text {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: rgba(239,233,230,0.85);
+      max-width: 32rem;
+      margin: 0 auto 2rem;
+      line-height: 1.75;
+    }
+    .gallery-cta-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer {
+      background: var(--primary);
+      padding: 3.5rem 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 55% 45%;
+      gap: 0;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-left {}
+    .footer-business-name {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+    .footer-tagline {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      color: #efe9e6;
+      font-style: italic;
+      margin-bottom: 0.75rem;
+    }
+    .footer-address {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      color: #efe9e6;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+      font-style: normal;
+    }
+    .footer-phone {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      color: var(--white);
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+    .footer-email {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      color: #efe9e6;
+      text-decoration: none;
+    }
+    .footer-right {
+      padding-left: 2rem;
+    }
+    .footer-links-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      color: #efe9e6;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    .footer-links {
+      list-style: none;
+    }
+    .footer-links li a {
+      font-family: var(--font-body);
+      font-size: 0.875rem;
+      color: #efe9e6;
+      text-decoration: none;
+      line-height: 2.2;
+      display: block;
+    }
+    .footer-links li a:hover {
+      text-decoration: underline;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      margin-top: 2.5rem;
+      padding-top: 1.25rem;
+      text-align: center;
+    }
+    .footer-bottom p {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      color: rgba(239,233,230,0.6);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 1024px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .lightbox-prev { left: -2.5rem; }
+      .lightbox-next { right: -2.5rem; }
+    }
+
+    @media (max-width: 767px) {
+      .header-nav,
+      .header-book-btn {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .gallery-page-h1 {
+        font-size: 2.25rem;
+      }
+      .gallery-filmstrip img {
+        height: 220px;
+        min-width: 300px;
+      }
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      .gallery-grid-heading {
+        font-size: 1.5rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .footer-right {
+        padding-left: 0;
+        margin-top: 2rem;
+      }
+      .lightbox-prev { left: -0.5rem; font-size: 1rem; padding: 0.5rem 0.65rem; }
+      .lightbox-next { right: -0.5rem; font-size: 1rem; padding: 0.5rem 0.65rem; }
+    }
+  </style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": "Photo Gallery — Newport Sailing School and Tours",
+  "description": "Browse photos of sailing on Newport Harbor and Narragansett Bay with Newport Sailing School and Tours.",
+  "about": {}
+}</script>
+<meta content="noindex, nofollow" name="robots"/><!-- KORA_FAVICON_START -->
+<link href="https://static.wixstatic.com/media/b7ad06_73484314f234451e88a4abba5c20b5bd%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/b7ad06_73484314f234451e88a4abba5c20b5bd%7Emv2.png" rel="icon" type="image/png"/>
+<link href="https://static.wixstatic.com/media/b7ad06_73484314f234451e88a4abba5c20b5bd%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/b7ad06_73484314f234451e88a4abba5c20b5bd%7Emv2.png" rel="apple-touch-icon"/>
+<!-- KORA_FAVICON_END -->
+<!-- KORA_GOOGLE_FONTS_START -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400;600;700&amp;family=Jost:wght@400;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One:wght@400;600;700&amp;family=Jost:wght@400;600;700&amp;display=swap"></noscript>
+<!-- KORA_GOOGLE_FONTS_END -->
+</head>
+<body>
+<!-- NAV DRAWER (mobile) -->
+<div aria-label="Navigation menu" aria-modal="true" class="nav-drawer" id="navDrawer" role="dialog">
+<button aria-label="Close menu" class="drawer-close" id="drawerClose">✕</button>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a class="active" href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+<a class="drawer-book-btn" href="https://www.newportsailing.com/online-booking">Book Now</a>
+</div>
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+<a aria-label="Newport Sailing School and Tours — Home" class="header-logo" href="index.html">
+<img alt="Newport Sailing School and Tours logo" height="44" src="https://quseprdus1.blob.core.windows.net/kora-business-images/social-media/21687d38-571e-42df-85a3-91d9855b80ed/medialibrary/1788850116_m0sgdh.png"/>
+</a>
+<nav aria-label="Main navigation">
+<ul class="header-nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a class="active" href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<a class="header-book-btn" href="https://www.newportsailing.com/online-booking">Book Now</a>
+<button aria-expanded="false" aria-label="Open navigation menu" class="hamburger" id="hamburgerBtn">
+<span></span>
+<span></span>
+<span></span>
+</button>
+</header>
+<div class="page-wrapper">
+<!-- PAGE HERO -->
+<section class="gallery-page-hero">
+<p class="gallery-page-eyebrow">Newport Sailing School and Tours</p>
+<h1 class="gallery-page-h1">Gallery</h1>
+<p class="gallery-page-intro">See what a sail with us actually looks like — Newport Harbor, Narragansett Bay, the boats, the crew and the scenery that keeps guests coming back every summer.</p>
+</section>
+<!-- FILMSTRIP — Life on the Water -->
+<section class="gallery-filmstrip-section">
+<h2 class="gallery-filmstrip-heading">Life on the Water</h2>
+<div aria-label="Scrollable photo filmstrip" class="gallery-filmstrip" role="region">
+<img alt="Sailing on Newport Harbor" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_sxx5dh.webp"/>
+<img alt="Newport sailing tour on the bay" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_jzpnsc.webp"/>
+<img alt="Crew sailing Narragansett Bay" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_qoiq95.webp"/>
+<img alt="Newport sailing scenery" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_k3d4jf.webp"/>
+<img alt="Sailing in Newport RI" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_gr31jv.jpg"/>
+<img alt="Newport Harbor sailing tour" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_2t4u9v.jpg"/>
+</div>
+</section>
+<!-- FULL GRID — All Photos -->
+<section class="gallery-grid-section">
+<p class="gallery-grid-eyebrow">All Photos</p>
+<h2 class="gallery-grid-heading">Browse the Full Collection</h2>
+<p class="gallery-grid-subhead">From sunrise sails to golden-hour sunsets, every voyage on Newport Harbor is a little different. Click any photo to view it full size.</p>
+<div class="gallery-grid" role="list">
+<div class="gallery-grid-item" role="listitem">
+<img alt="Sailing on Newport Harbor" class="gallery-thumb" data-index="0" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_sxx5dh.webp" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Newport sailing tour on the bay" class="gallery-thumb" data-index="1" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_jzpnsc.webp" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Crew sailing Narragansett Bay" class="gallery-thumb" data-index="2" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_qoiq95.webp" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Newport sailing scenery" class="gallery-thumb" data-index="3" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_k3d4jf.webp" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Sailing in Newport RI" class="gallery-thumb" data-index="4" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_gr31jv.jpg" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Newport Harbor sailing tour" class="gallery-thumb" data-index="5" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_2t4u9v.jpg" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Sailing on Narragansett Bay with Newport Sailing" class="gallery-thumb" data-index="6" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_75um2p.webp" tabindex="0"/>
+</div>
+<div class="gallery-grid-item" role="listitem">
+<img alt="Newport sailing experience at sea" class="gallery-thumb" data-index="7" loading="lazy" src="https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_odwvdv.webp" tabindex="0"/>
+</div>
+</div>
+</section>
+<!-- LIGHTBOX -->
+<div aria-label="Photo lightbox" aria-modal="true" class="lightbox-overlay" id="lightboxOverlay" role="dialog">
+<div class="lightbox-inner">
+<button aria-label="Close photo" class="lightbox-close" id="lightboxClose">✕</button>
+<button aria-label="Previous photo" class="lightbox-prev" id="lightboxPrev">←</button>
+<img alt="" id="lightboxImg" src=""/>
+<button aria-label="Next photo" class="lightbox-next" id="lightboxNext">→</button>
+</div>
+</div>
+<!-- CLOSING CTA BAND -->
+<section class="gallery-cta-band">
+<div aria-hidden="true" class="gallery-cta-rule"></div>
+<h2 class="gallery-cta-heading">Ready to Experience Newport Under Sail?</h2>
+<p class="gallery-cta-text">Every photo here was taken on the same waters you'll sail. Departing from Goat Island Marina in Newport, RI — tours run daily, May through November.</p>
+<a class="gallery-cta-btn" href="https://www.newportsailing.com/online-booking">Book Now</a>
+</section>
+<!-- FOOTER -->
+<footer class="site-footer">
+<div class="footer-grid">
+<!-- Left column -->
+<div class="footer-left">
+<p class="footer-business-name">Newport Sailing School and Tours</p>
+<p class="footer-tagline">Newport's Finest Since 1971</p>
+<address class="footer-address">
+          5 Marina Plaza, Goat Island Marina, Dock A5<br/>
+          Newport, RI 02840
+        </address>
+<a class="footer-phone" href="tel:+14018482266">(401) 848-2266</a>
+<a class="footer-email" href="mailto:info@newportsailing.com">info@newportsailing.com</a>
+</div>
+<!-- Right column -->
+<div class="footer-right">
+<p class="footer-links-eyebrow">Quick Links</p>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
+<hr class="footer-rule"/>
+<p class="footer-copy">© 2025 Newport Sailing School and Tours. All rights reserved.</p>
+</footer>
+</div><!-- /.page-wrapper -->
+<script>
+    // Header scroll shadow
+    var header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile nav drawer
+    var hamburgerBtn = document.getElementById('hamburgerBtn');
+    var navDrawer = document.getElementById('navDrawer');
+    var drawerClose = document.getElementById('drawerClose');
+
+    hamburgerBtn.addEventListener('click', function() {
+      navDrawer.classList.add('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'true');
+      drawerClose.focus();
+    });
+    drawerClose.addEventListener('click', function() {
+      navDrawer.classList.remove('open');
+      hamburgerBtn.setAttribute('aria-expanded', 'false');
+      hamburgerBtn.focus();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && navDrawer.classList.contains('open')) {
+        navDrawer.classList.remove('open');
+        hamburgerBtn.setAttribute('aria-expanded', 'false');
+        hamburgerBtn.focus();
+      }
+    });
+
+    // Lightbox
+    var galleryImages = [
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_sxx5dh.webp', alt: 'Sailing on Newport Harbor' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_jzpnsc.webp', alt: 'Newport sailing tour on the bay' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_qoiq95.webp', alt: 'Crew sailing Narragansett Bay' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867647_k3d4jf.webp', alt: 'Newport sailing scenery' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_gr31jv.jpg', alt: 'Sailing in Newport RI' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_2t4u9v.jpg', alt: 'Newport Harbor sailing tour' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_75um2p.webp', alt: 'Sailing on Narragansett Bay with Newport Sailing' },
+      { src: 'https://quseprdus1.blob.core.windows.net/kora-business-images/user-media/21687d38-571e-42df-85a3-91d9855b80ed/de8c94d8-887e-4625-825f-ec262dbc28df/1788867648_odwvdv.webp', alt: 'Newport sailing experience at sea' }
+    ];
+
+    var currentIndex = 0;
+    var lightboxOverlay = document.getElementById('lightboxOverlay');
+    var lightboxImg = document.getElementById('lightboxImg');
+    var lightboxClose = document.getElementById('lightboxClose');
+    var lightboxPrev = document.getElementById('lightboxPrev');
+    var lightboxNext = document.getElementById('lightboxNext');
+
+    function openLightbox(index) {
+      currentIndex = index;
+      lightboxImg.src = galleryImages[index].src;
+      lightboxImg.alt = galleryImages[index].alt;
+      lightboxOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      lightboxClose.focus();
+    }
+
+    function closeLightbox() {
+      lightboxOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function showPrev() {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      lightboxImg.src = galleryImages[currentIndex].src;
+      lightboxImg.alt = galleryImages[currentIndex].alt;
+    }
+
+    function showNext() {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      lightboxImg.src = galleryImages[currentIndex].src;
+      lightboxImg.alt = galleryImages[currentIndex].alt;
+    }
+
+    var thumbs = document.querySelectorAll('.gallery-thumb');
+    thumbs.forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        openLightbox(parseInt(this.getAttribute('data-index'), 10));
+      });
+      thumb.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openLightbox(parseInt(this.getAttribute('data-index'), 10));
+        }
+      });
+    });
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', showPrev);
+    lightboxNext.addEventListener('click', showNext);
+
+    lightboxOverlay.addEventListener('click', function(e) {
+      if (e.target === lightboxOverlay) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (!lightboxOverlay.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPrev();
+      if (e.key === 'ArrowRight') showNext();
+    });
+  </script>
+<!-- KORA_BRANDING_FOOTER_SCRIPT_START -->
+<script>
+(function () {
+  var koraUrl = "https://askkora.ai";
+  var muted = "#64748b";
+  var blue = "#1E88E5";
+  var purple = "#7B1FA2";
+  var startMarker = 'KORA_' + 'BRANDING_FOOTER_START';
+  var endMarker = 'KORA_' + 'BRANDING_FOOTER_END';
+  var selector = '[data-kora-branding-footer="true"], .kora-powered-by';
+
+  function removeExisting() {
+    document.querySelectorAll(selector).forEach(function (node) {
+      if (node && node.parentNode) node.parentNode.removeChild(node);
+    });
+    var walker = document.createTreeWalker(document.documentElement, NodeFilter.SHOW_COMMENT);
+    var comments = [];
+    while (walker.nextNode()) {
+      if (walker.currentNode.nodeValue.indexOf(startMarker) !== -1 || walker.currentNode.nodeValue.indexOf(endMarker) !== -1) {
+        comments.push(walker.currentNode);
+      }
+    }
+    comments.forEach(function (node) {
+      if (node && node.parentNode) node.parentNode.removeChild(node);
+    });
+  }
+
+  function buildBranding() {
+    var wrapper = document.createElement('div');
+    wrapper.className = 'kora-powered-by';
+    wrapper.setAttribute('data-kora-branding-footer', 'true');
+    wrapper.style.cssText = 'display:flex;justify-content:flex-end;align-items:center;gap:0.35rem;padding:0.75rem 1rem;font-size:0.75rem;';
+    wrapper.innerHTML = '<span style="color:' + muted + '">Powered by</span>' +
+      '<a href="' + koraUrl + '" target="_blank" rel="nofollow noopener noreferrer" style="text-decoration:none;font-weight:600;background:linear-gradient(135deg,' + blue + ',' + purple + ');-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">Kora</a>';
+    return wrapper;
+  }
+
+  function targetFooter(allowFallback) {
+    var footer = document.querySelector('footer');
+    if (footer) return footer;
+    if (!allowFallback) return null;
+    return document.getElementById('site-footer') || document.body;
+  }
+
+  function placeBranding(allowFallback) {
+    var target = targetFooter(allowFallback);
+    if (!target) return false;
+    removeExisting();
+    target.appendChild(document.createComment(' ' + startMarker + ' '));
+    target.appendChild(buildBranding());
+    target.appendChild(document.createComment(' ' + endMarker + ' '));
+    return target.tagName && target.tagName.toLowerCase() === 'footer';
+  }
+
+  function start() {
+    if (placeBranding(false)) return;
+    var observer = new MutationObserver(function () {
+      if (placeBranding(false)) observer.disconnect();
+    });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
+    window.setTimeout(function () { observer.disconnect(); placeBranding(true); }, 3000);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+}());
+</script>
+<!-- KORA_BRANDING_FOOTER_SCRIPT_END -->
+</body>
+</html>
