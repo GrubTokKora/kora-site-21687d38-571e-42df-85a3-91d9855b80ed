@@ -1,0 +1,12 @@
+{
+  "name": "Newport Sailing School and Tours",
+  "short_name": "Newport Sailing",
+  "icons": [
+    { "src": "assets/img/favicon.png", "sizes": "64x64", "type": "image/png" },
+    { "src": "assets/img/logo.png", "sizes": "153x153", "type": "image/png" }
+  ],
+  "theme_color": "#1b3a5b",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "index.html"
+}
