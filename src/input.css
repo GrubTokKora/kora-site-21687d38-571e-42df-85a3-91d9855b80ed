@@ -18,10 +18,11 @@
   --color-brand-muted: #5a6b7b;
   --color-brand-soft: #efe9e6;
   --color-brand-border: rgba(27, 58, 91, 0.16);
-  --font-brand: "Rozha One", Georgia, serif;
-  --font-heading: "Rozha One", Georgia, serif;
-  --font-body: "Jost", "Avenir", system-ui, sans-serif;
-  --font-nav: "Jost", "Avenir", system-ui, sans-serif;
+  --font-brand: var(--font-heading);
+  --font-heading: var(--kora-font-heading, "Rozha One"), Georgia, serif;
+  --font-body: var(--kora-font-body, "Jost"), "Avenir", system-ui, sans-serif;
+  --font-accent: var(--kora-font-accent, var(--font-heading)), var(--font-heading);
+  --font-nav: var(--font-body);
 }
 /* KORA_BRAND_THEME_END */
 
@@ -44,10 +45,10 @@
     --color-brand-muted: #5a6b7b;
     --color-brand-soft: #efe9e6;
     --color-brand-border: rgba(27, 58, 91, 0.16);
-    --font-brand: "Rozha One", Georgia, serif;
-    --font-heading: "Rozha One", Georgia, serif;
-    --font-body: "Jost", "Avenir", system-ui, sans-serif;
-    --font-nav: "Jost", "Avenir", system-ui, sans-serif;
+    --font-brand: var(--font-heading);
+    --font-heading: var(--kora-font-heading, "Rozha One"), Georgia, serif;
+    --font-body: var(--kora-font-body, "Jost"), "Avenir", system-ui, sans-serif;
+    --font-nav: var(--font-body);
   }
 
   html {
