@@ -1,21 +1,21 @@
 # Newport Sailing School and Tours
 
-> Newport, Rhode Island's first and only pure sailing tour. Family owned and operated since 1965. Narrated sailing tours, ASA-certified sailing instruction, corporate team building, and custom private charters on Newport Harbor and Narragansett Bay. Newport's Finest Since 1971.
+> Newport Sailing School and Tours has been operating in Newport, Rhode Island, since 1971. Located at Goat Island Marina, the business offers sailing instruction and tours.
 
-Location: 5 Marina Plaza, Goat Island Marina, Dock A5, Newport, RI 02840 (free parking at Dock A5 kiosk; cruises depart every 90 minutes, seasonal May–November).
-Phone: (401) 848-2266
-Email: info@newportsailing.com
-Booking: FareHarbor (real-time online booking).
+## Location & Contact
+- Address: 5 Marina Plaza, Goat Island Marina, Dock A5, Newport, RI 02840
+- Phone: +14018482266
+- Email: info@newportsailing.com
 
-## Pages
-- [Home](index.html): Overview, what makes us special, reviews, location.
-- [Services](services.html): All sailing experiences at a glance.
-- [Sailing Tours](sailing-tours.html): Private ($400, up to 6) and group ($60/person) day & sunset sails.
-- [Sailing Instruction](sailing-instruction.html): Intro courses ($100–$495), ASA 101 Certification ($1,395), intermediate ($495).
-- [Team Building](team-building.html): Corporate charters and custom team building events.
-- [Custom Sailing Experiences](custom-sailing.html): Private, occasion-based charters.
-- [About Us](about.html): Family history since 1965, Captain Mike, Colgate 26 fleet.
-- [Gallery](gallery.html): Photos of sails, sunsets and scenery.
-- [Reviews](reviews.html): Customer testimonials.
-- [Contact](contact.html): Contact form, phone, email, map.
-- [Online Booking](booking.html): Real-time FareHarbor booking.
+## Hours
+- Monday: 9:00 AM – 8:00 PM
+- Tuesday: 9:00 AM – 8:00 PM
+- Wednesday: 9:00 AM – 8:00 PM
+- Thursday: 9:00 AM – 8:00 PM
+- Friday: 9:00 AM – 8:00 PM
+- Saturday: 9:00 AM – 8:00 PM
+- Sunday: 9:00 AM – 8:00 PM
+
+## Action Links
+- [Reserve a Table](https://fareharbor.com/embeds/book/newportsailing/?full-items=yes)
+- [Contact Us](contact.html)
